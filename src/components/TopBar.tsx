@@ -22,17 +22,19 @@ const TopBar: React.FC<TopBarProps> = ({ isDark }) => {
   }, []);
 
   const formatTime = (date: Date) => {
-    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    
-    const day = days[date.getDay()];
-    const month = months[date.getMonth()];
-    const dateNum = date.getDate();
-    const hours = date.getHours().toString().padStart(2, '0');
-    const minutes = date.getMinutes().toString().padStart(2, '0');
-    
-    return `${day} ${dateNum} ${month}, ${hours}:${minutes}`;
-  };
+  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  const day = days[date.getDay()];
+  const month = months[date.getMonth()];
+  const dateNum = date.getDate();
+  const hours = date.getHours().toString().padStart(2, '0');
+  const minutes = date.getMinutes().toString().padStart(2, '0');
+  const seconds = date.getSeconds().toString().padStart(2, '0');
+
+  return `${day} ${dateNum} ${month}, ${hours}:${minutes}:${seconds}`;
+};
+
 
   return (
     <div className={`fixed top-0 left-0 right-0 h-7 flex items-center justify-between px-4 text-sm font-medium z-50 backdrop-blur-xl transition-all duration-300 ${

@@ -57,10 +57,10 @@ const Dock: React.FC<DockProps> = ({ isDark, onToggleTheme, onAppClick }) => {
       icon: Camera,
       label: "Mirror",
       color: "from-cyan-500 to-indigo-500",
-    }, // ← Tambahan Camera
+    },
     {
       id: "certificates",
-      icon: FolderOpen, // kamu bisa pakai icon lucide lainnya jika mau
+      icon: FolderOpen,
       label: "Certificates",
       color: "from-teal-500 to-teal-600",
     },

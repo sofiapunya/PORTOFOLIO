@@ -745,6 +745,22 @@ const WindowContent: React.FC<WindowContentProps> = ({ app, isDark }) => {
           <div className="grid gap-8">
             {[
               {
+                title: "Hiking Information Website",
+                image: "/website-pendakian.png",
+                description:
+                  "A web-based platform that provides hiking route information, weather updates, and gear recommendations with a responsive design.",
+                tech: ["React", "Tailwind CSS", "JavaScript"],
+                stars: 96,
+              },
+              {
+                title: "Online Shop – Mie Ayam",
+                image: "/onloineshop-mieayam.png",
+                description:
+                  "A responsive food e-commerce site tailored for local culinary business, offering menu listings, cart management, and smooth checkout flow.",
+                tech: ["React", "Tailwind CSS", "JavaScript"],
+                stars: 88,
+              },
+              {
                 title: "Modern E-Commerce Platform",
                 image: "/Web onlin.png",
                 description:

@@ -3,7 +3,8 @@ import TopBar from './components/TopBar';
 import Dock from './components/Dock';
 import Window from './components/Window';
 import WindowContent from './components/WindowContent';
-import MirrorModal from './components/MirrorModal'; // ← Sudah ditambahkan
+import TypewriterText from './components/TypewriterText';
+import MirrorModal from './components/MirrorModal';
 
 
 
@@ -72,14 +73,10 @@ function App() {
           }}>
             My Portofolio
           </h1>
-          <p className={`text-xl md:text-2xl font-light ${
-            isDark ? 'text-gray-200' : 'text-white'
-          }`} style={{ 
-            fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif',
-            textShadow: '0 1px 10px rgba(0,0,0,0.3)'
-          }}>
-            Feel free to explore the dock below!
-          </p>
+         <TypewriterText
+  text="Feel free to explore the dock below !"
+  isDark={isDark}
+/>
         </div>
       </div>
 

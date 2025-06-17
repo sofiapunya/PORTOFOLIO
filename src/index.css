@@ -6,6 +6,23 @@
 .scrollbar-thin {
   scrollbar-width: thin;
 }
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: currentColor;
+  margin-left: 2px;
+  animation: blink 1.2s step-end infinite;
+}
 
 .scrollbar-thumb-gray-300 {
   scrollbar-color: #d1d5db transparent;
