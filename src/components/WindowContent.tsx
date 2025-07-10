@@ -745,12 +745,53 @@ const WindowContent: React.FC<WindowContentProps> = ({ app, isDark }) => {
           <div className="grid gap-8">
             {[
               {
+                title: "Bisnis F&B",
+                image: "/fnb.png",
+                description:
+                  "A landing page for a fictional food & beverage business, showcasing menus, services, and promotional offers. Built with a clean and responsive design to enhance user engagement and brand visibility.",
+
+                tech: ["Html", "CSS", "JavaScript"],
+                stars: 96,
+                link: "https://technopreneurship-roan.vercel.app/",
+              },
+              {
+                title: "Unofficial Profile Desa",
+                image: "/profildesa.png",
+                description:
+                  "An unofficial village profile website designed to display demographic data, local governance information, and geographic features. Built using PHP Blade with a clean Bootstrap layout and MySQL integration.",
+
+                tech: ["Blade", "Php", "MySQL", "Bootstrap"],
+                stars: 96,
+                link: "https://github.com/faulnam/Profile_Desa",
+              },
+              {
+                title: "Unofficial Byon Combat",
+                image: "/byon.png",
+                description:
+                  "A fan-made promotional site for Byon Combat, featuring a sleek interface, interactive product showcase, and mobile-friendly design. Developed with React and Tailwind CSS to ensure fast load times and responsiveness.",
+
+                tech: ["React", "Tailwind CSS", "JavaScript"],
+                stars: 96,
+                link: "https://byon-combat.vercel.app/",
+              },
+              {
+                title: "Unofficial Organisasi",
+                image: "/organisasi.png",
+                description:
+                  "An unofficial website for a student organization, highlighting its vision, events, structure, and news. Designed to foster community engagement with a modern and responsive user interface.",
+
+                tech: ["React", "Tailwind CSS", "JavaScript"],
+                stars: 96,
+                link: "https://organisasi-gilt.vercel.app/",
+              },
+              {
                 title: "Hiking Information Website",
                 image: "/website-pendakian.png",
                 description:
                   "A web-based platform that provides hiking route information, weather updates, and gear recommendations with a responsive design.",
                 tech: ["React", "Tailwind CSS", "JavaScript"],
                 stars: 96,
+                link: "https://youth-wear-modern-fashion-for-young.vercel.app/",
               },
               {
                 title: "Online Shop – Mie Ayam",
@@ -759,6 +800,7 @@ const WindowContent: React.FC<WindowContentProps> = ({ app, isDark }) => {
                   "A responsive food e-commerce site tailored for local culinary business, offering menu listings, cart management, and smooth checkout flow.",
                 tech: ["React", "Tailwind CSS", "JavaScript"],
                 stars: 88,
+                link: "https://faulnam.github.io/WEN-JUALAN/",
               },
               {
                 title: "Modern E-Commerce Platform",
@@ -767,6 +809,7 @@ const WindowContent: React.FC<WindowContentProps> = ({ app, isDark }) => {
                   "A full-stack online store built with React and Node.js, featuring product management and secure checkout.",
                 tech: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
                 stars: 120,
+                link: "https://github.com/faulnam/Aplikasi-Web-Baju",
               },
               {
                 title: "Employee Attendance System",
@@ -775,6 +818,7 @@ const WindowContent: React.FC<WindowContentProps> = ({ app, isDark }) => {
                   "A web-based attendance system to manage employee presence and generate daily reports efficiently.",
                 tech: ["HTML", "CSS", "PHP", "MySQL"],
                 stars: 85,
+                link: "https://github.com/faulnam/APK-WEB-ABSENSI",
               },
               {
                 title: "Online Store Prototype",
@@ -783,6 +827,7 @@ const WindowContent: React.FC<WindowContentProps> = ({ app, isDark }) => {
                   "A responsive web prototype for online retail with a shopping cart and product display.",
                 tech: ["Figma", "HTML", "CSS", "JavaScript"],
                 stars: 95,
+                link: "https://github.com/faulnam/APK-WEB-ATK",
               },
               {
                 title: "Personal Portfolio Website",
@@ -791,6 +836,7 @@ const WindowContent: React.FC<WindowContentProps> = ({ app, isDark }) => {
                   "An interactive portfolio site to showcase my profile, skills, and recent projects.",
                 tech: ["Next.js", "Tailwind CSS", "TypeScript"],
                 stars: 200,
+                link: "https://faulnam.github.io/WEB-PERSONAL/",
               },
               {
                 title: "Dynamic Blog Platform",
@@ -799,6 +845,7 @@ const WindowContent: React.FC<WindowContentProps> = ({ app, isDark }) => {
                   "A CMS-based blog with user authentication, commenting, and rich text editing.",
                 tech: ["React", "Firebase", "QuillJS"],
                 stars: 110,
+                link: "https://faulnam.github.io/WEB-KELAS/",
               },
               {
                 title: "Creative Canva Designs",
@@ -823,6 +870,7 @@ const WindowContent: React.FC<WindowContentProps> = ({ app, isDark }) => {
                   "Grew a TikTok account to over 1,000 followers in 2 months with content planning and analytics.",
                 tech: ["TikTok", "Analytics", "Content Strategy"],
                 stars: 70,
+                link: "https://www.tiktok.com/faulnam_",
               },
               {
                 title: "UI/UX Design Case Study",
@@ -839,6 +887,7 @@ const WindowContent: React.FC<WindowContentProps> = ({ app, isDark }) => {
                   "A social-themed blog platform for community interaction, complete with tags and filters.",
                 tech: ["Laravel", "MySQL", "Bootstrap"],
                 stars: 90,
+                link: "https://github.com/faulnam/catatansemenit",
               },
             ].map((project, index) => (
               <div
@@ -865,15 +914,22 @@ const WindowContent: React.FC<WindowContentProps> = ({ app, isDark }) => {
                             {project.stars}
                           </span>
                         </div>
-                        <button
-                          className={`p-2 rounded-lg transition-colors hover:scale-110 duration-200 ${
-                            isDark
-                              ? "hover:bg-gray-700 text-gray-400 hover:text-white"
-                              : "hover:bg-gray-100 text-gray-600 hover:text-gray-900"
-                          }`}
-                        >
-                          <ExternalLink size={18} />
-                        </button>
+                        {project.link && (
+                          <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`p-2 rounded-lg transition-colors hover:scale-110 duration-200 ${
+                              isDark
+                                ? "hover:bg-gray-700 text-gray-400 hover:text-white"
+                                : "hover:bg-gray-100 text-gray-600 hover:text-gray-900"
+                            }`}
+                            title="View project"
+                            aria-label="View project"
+                          >
+                            <ExternalLink size={18} />
+                          </a>
+                        )}
                       </div>
                     </div>
 

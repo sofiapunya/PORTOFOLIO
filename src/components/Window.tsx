@@ -120,7 +120,11 @@ const Window: React.FC<WindowProps> = ({
             />
             <button 
               className="w-3 h-3 rounded-full bg-green-500 hover:bg-green-600 transition-colors shadow-sm hover:shadow-md transform hover:scale-110 duration-150"
-            />
+              title="Maximize"
+              aria-label="Maximize window"
+            >
+              <span className="sr-only">Maximize</span>
+            </button>
           </div>
 
           {/* Title */}
