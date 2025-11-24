@@ -745,6 +745,16 @@ const WindowContent: React.FC<WindowContentProps> = ({ app, isDark }) => {
           <div className="grid gap-8">
             {[
               {
+                title: "Tartil Land",
+                image: "/tartil.png",
+                description:
+                  "A landing page for a fictional food & beverage business, showcasing menus, services, and promotional offers. Built with a clean and responsive design to enhance user engagement and brand visibility.",
+
+                tech: ["React", "JavaScript"],
+                stars: 96,
+                link: "https://tartil-land.vercel.app/",
+              },
+              {
                 title: "Bisnis F&B",
                 image: "/fnb.png",
                 description:
@@ -755,14 +765,14 @@ const WindowContent: React.FC<WindowContentProps> = ({ app, isDark }) => {
                 link: "https://technopreneurship-roan.vercel.app/",
               },
               {
-                title: "Unofficial Profile Desa",
+                title: "Profile Desa",
                 image: "/profildesa.png",
                 description:
                   "An unofficial village profile website designed to display demographic data, local governance information, and geographic features. Built using PHP Blade with a clean Bootstrap layout and MySQL integration.",
 
                 tech: ["Blade", "Php", "MySQL", "Bootstrap"],
                 stars: 96,
-                link: "https://github.com/faulnam/Profile_Desa",
+                link: "https://wonokarang.projekfilkom.com/",
               },
               {
                 title: "Unofficial Byon Combat",
