@@ -745,7 +745,7 @@ const WindowContent: React.FC<WindowContentProps> = ({ app, isDark }) => {
           <div className="grid gap-8">
             {[
               {
-                title: "Design E-Commerce ",
+                title: "Design E-Commerce. ",
                 image: "/patah.png",
                 description:
                   "A collection of digital marketing visuals and made using Canva.",
